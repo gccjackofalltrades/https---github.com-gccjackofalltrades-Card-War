@@ -12,15 +12,30 @@ class player
 public:
 	player (int handTotal);
 	Card gethandCard (int location);
-	void sethandCard (int location, Card c);
+	void sethandCard (int location, Card c, player p)
+	{
+		p.hand[location] = c;
+	}
 	Card getDiscardCard(int location);
-	void setDiscardCard(int location);
+	void setDiscardCard(int location, Card d, player p)
+	{
+		p.discard[location] = d;
+	}
 	int getHandSize();
-	void setHandSize(int size);
+	void setHandSize(player p)
+	{
+		p.handSize = p.hand.size();
+	}
 	int getDiscardSize();
-	void setDiscardSize();
+	void setDiscardSize(player p)
+	{
+		p.discardSize = p.discard.size();
+	}
 	int getCardTotal();
-	void setCardTotal(int total);
+	void setCardTotal(player p)
+	{
+		p.cardTotal = p.handSize + p.discardSize;
+	}
 	friend void shuffleHand ();
 private:
 	int handSize;
