@@ -14,13 +14,13 @@ public:
 	Card gethandCard (int location);
 	void sethandCard (int location, Card c);
 	Card getDiscardCard(int location);
-	void setDiscardCard(int location);
+	void setDiscardCard(int location, Card d);
 	int getHandSize();
-	void setHandSize(int size);
+	void setHandSize();
 	int getDiscardSize();
 	void setDiscardSize();
 	int getCardTotal();
-	void setCardTotal(int total);
+	void setCardTotal();
 	friend void shuffleHand ();
 private:
 	int handSize;
@@ -29,7 +29,6 @@ private:
 	vector <Card> hand;
 	vector <Card> discard;
 };
-
 class deck
 {
 public:
@@ -49,3 +48,24 @@ public:
 	bool gameOver (int humanNum, int computerNum);
 	void deal (deck d, player human, player computer);
 };
+
+void player::sethandCard (int location, Card c)
+{
+	hand[location] = c;
+}
+void player::setDiscardCard(int location, Card d)
+{
+	discard[location] = d;
+}
+void player::setHandSize()
+{
+	handSize = hand.size();
+}
+void player::setDiscardSize()
+{
+	discardSize = discard.size();
+}
+void player::setCardTotal()
+{
+	cardTotal = handSize + discardSize;
+}
