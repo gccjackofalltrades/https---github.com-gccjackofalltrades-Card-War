@@ -1,0 +1,237 @@
+https---github.com-gccjackofalltrades-Card-War
+==============================================
+// CARDS.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <ctime> 
+#include <iostream>
+#include <string>
+#include <vector>
+using std::string;
+using std::vector;
+using std::cout;
+using std::endl;
+
+
+enum Suit {clubs, diamonds, hearts, spades};
+enum Value {deuce=1, trey, four, five, six, seven, eight, nine, ten, jack, queen, king, ace=0};
+
+
+class Card {
+public:
+	Card (Value faceValue=deuce, Suit suit = clubs):
+		suit (suit), faceValue(faceValue) {}//constructor
+	Suit getSuit() { return suit; }//suit getter
+	Value getValue() { return faceValue; }//value geter
+	static string suitName (Suit s); //returns suit name
+	static string valueName (Value v);//returns value name
+	string name() { return valueName (faceValue) + " of " + suitName(suit);} //output name function
+private:
+		Suit suit;
+		Value faceValue;
+};
+
+//suitname definition
+string Card::suitName (Suit s) {
+	switch(s) {
+		case clubs: return "Clubs";
+		case diamonds: return "Diamonds";
+		case hearts: return "Hearts";
+		case spades: return "Spades";
+		default: throw std::out_of_range("Suit value out of range");
+	}
+}
+
+//value name definition
+string Card::valueName (Value v) {
+	switch(v) {
+	case ace: return "Ace";
+	case deuce: return "Deuce";
+	case trey: return "Trey";
+	case four: return "Four";
+	case five: return "Five";
+	case six:  return "Six";
+	case seven: return "Seven";
+	case eight: return "Eight";
+	case nine: return "Nine";
+	case ten: return "Ten";
+	case jack: return "Jack";
+	case queen: return "Queen";
+	case king: return "King";
+	default: throw std::out_of_range("Face value out of range");
+	}
+}
+
+vector <Card> deck_of_cards;
+void create_deck(); //creates deck using value_setter and Suit_setter, store into a vector deck_of_cards
+void shuffle_deck();//shuffles the deck through swapping index values
+Value value_setter(int j);//accepts index j, goes from 0 to 12, returns appropriate card value
+Suit suit_setter(int i); //accepts index i, goes from 0 to 3, returns appropriate suit value
+
+int main()
+{
+	deck_of_cards.resize(52);
+	create_deck();
+	return 0;
+}
+
+
+void create_deck()
+{
+	Card cards;
+	Suit suit;
+	Value value;
+	int k=0;
+	for(int i=0; i<4;i++)
+	{
+		suit=suit_setter(i);
+		for(int j=0; j<13;j++)
+		{
+		  value=value_setter(j);
+		  deck_of_cards[k]=Card(value,suit);
+		  k++; //increment k, will go up to 52
+		}
+	}
+}
+
+void shuffle_deck()
+{
+	Card temp;//stores the card object
+	int index=0;//think of index as k, the index of the deck_of_cards_vector that holds an object
+	int index_storer [51]={53}; //all elements set to 53
+	bool if_switch=true; 
+	srand(time(0));
+
+	//fill up the random index
+	for(int i=0;i++;i<52)
+	{
+		index=rand()%52+1;//generate random index
+
+		//check to make sure the number hasn't come before
+		for(int j=0;j<52;j++)
+		{
+			if(index_storer[j]==index) //run throuhg all 52 value in index sorter, if one equals if return false
+			{
+				if_switch=false;
+			} 
+			else if(j==51)//ran through all 52 cards and haven't found a match
+			{
+				if_switch=true;
+			}
+		}
+		if(if_switch)
+		{
+			index_storer[i]=index;//store the value
+			i++; //allow the loop to move on
+		}
+		else
+			i--; //don't allow the loop to move on
+	}
+
+	//swap values
+	for(int i=51;i<=0;i--)
+	{
+		//swaps value with random value
+		temp=deck_of_cards[i];
+		deck_of_cards[i]=deck_of_cards[index];
+		deck_of_cards[index]=temp;
+
+	}
+}
+
+Value value_setter(int j)
+{
+	Value value;
+	if(j==0)
+	{
+	 value=ace;
+	 return value;
+	}
+	if(j==1)
+	{
+	 value=deuce;
+	 return value;
+	}
+	if(j==2)
+	{
+	 value=trey;
+	 return value;
+	}
+	if(j==3)
+	{
+	 value=four;
+	 return value;
+	}
+	if(j==4)
+	{
+	 value=five;
+	 return value;
+	}
+	if(j==5)
+	{
+	 value=six;
+	 return value;
+	}
+	if(j==6)
+	{
+	 value=seven;
+	 return value;
+	}
+	if(j==7)
+	{
+	 value=eight;
+	 return value;
+	}
+	if(j==8)
+	{
+	 value=nine;
+	 return value;
+	}
+	if(j==9)
+	{
+	 value=ten;
+	 return value;
+	}
+	if(j==10)
+	{
+	 value=jack;
+	 return value;
+	}
+	if(j==11)
+	{
+	 value=queen;
+	 return value;
+	}
+	if(j==12)
+	{
+	 value=king;
+	 return value;
+	}
+}
+
+Suit suit_setter(int i)
+{
+	Suit suit;
+	if(i==0)
+	{
+	 suit=clubs;
+	 return suit;
+	}
+	if(i==1)
+	{
+	 suit=diamonds;
+	 return suit;
+	}
+	if(i==2)
+	{
+	 suit=hearts;
+	 return suit;
+	}
+	if(i==3)
+	{
+	 suit=spades;
+	 return suit;
+	}
+
+}
