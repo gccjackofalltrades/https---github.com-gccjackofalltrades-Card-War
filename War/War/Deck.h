@@ -1,6 +1,9 @@
 #ifndef DECK_
 #define DECK_
 
+#include "Card.h"
+#include <vector>
+
 class deck
 {
 public:
