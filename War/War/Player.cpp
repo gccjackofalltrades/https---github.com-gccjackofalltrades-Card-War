@@ -92,7 +92,7 @@ void player::shuffleHand ()
 	srand(time(0));
 	int random_number=rand()%hand.size()+1;//sets up a random number based on the decks size
 
-	for(int i=0; (i)<hand.size();i++)
+	for(int i=0; i<hand.size();i++)
 	{
 
 		//swap the first and last elements
@@ -120,3 +120,4 @@ void player::shuffleHand ()
 	}
 
 }
+

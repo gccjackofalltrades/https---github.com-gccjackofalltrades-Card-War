@@ -116,6 +116,7 @@ bool gameManager::gameOver(player human, player computer)
 
 void gameManager::printCard(Card c)
 {
+	cout << c.getValue() << " of " << c.getSuit() << endl;
 }
 
 void gameManager::deal(deck d, player human, player computer)
