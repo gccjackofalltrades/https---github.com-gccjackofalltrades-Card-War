@@ -113,5 +113,5 @@ bool gameManager::gameOver(player human, player computer)
 
 void gameManager::printCard(Card c)
 {
-	cout << c.faceValue << " of " << c.suit << endl;
+	cout << c.getValue() << " of " << c.getSuit() << endl;
 }
