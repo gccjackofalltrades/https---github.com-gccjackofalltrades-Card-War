@@ -26,161 +26,56 @@ void deck::create_deck()
 	deck setter;
 	setter.size_the_deck(); //set size of deck
 
-	Card cards;
-	Suit suit;
 	Value value;
 	int k=0;
-	for(int i=0; i<4;i++)
+	for(Suit suit = clubs; suit <= spades; suit = (Suit)(static_cast<int>(suit) + 1))
 	{
-		suit=suit_setter(i);
-		for(int j=0; j<13;j++)
+		for(int j=1; j<=13;j++)
 		{
-		  value=value_setter(j);
+		  value=static_cast<Value>(j);
 		  deck_of_cards[k]=Card(value,suit);
 		  k++; //increment k, will go up to 52
 		}
 	}
-	setter.shuffle_deck; //calls to shuffle the deck
+	setter.shuffle_deck(deck_of_cards); //calls to shuffle the deck
 }
 
-void deck::shuffle_deck()
+void deck::shuffle_deck(vector<Card>& decks)
 {
-	Card temp;//stores the card object
-	int index=0;//think of index as k, the index of the deck_of_cards_vector that holds an object
-	int index_storer [51]={53}; //all elements set to 53
-	bool if_switch=true; 
+	int store; //temporary storage for indices
+
+	Card temp; //storage for object
+
 	srand(time(0));
+	int random_number=rand()%decks.size()+1;//sets up a random number based on the decks size
 
-	//fill up the random index
-	for(int i=0;i++;i<52)
+	for(int i=0; (i)<decks.size();i++)
 	{
-		index=rand()%52+1;//generate random index
-
-		//check to make sure the number hasn't come before
-		for(int j=0;j<52;j++)
+		//swap the first and last elements
+		if((i+1)==decks.size())
 		{
-			if(index_storer[j]==index) //run throuhg all 52 value in index sorter, if one equals if return false
-			{
-				if_switch=false;
-				break; //out of the inner loop
-			} 
-			else if((j==51))//ran through all 52 cards and haven't found a match
-			{
-				if_switch=true;
-			}
-		}
-		if(if_switch)
-		{
-			index_storer[i]=index;//store the value
-			i++; //allow the loop to move on
+			store=decks.size();
+			temp=decks[store];
+			decks[store]=decks[0];
+			decks[0]=temp;
 		}
 		else
-			i--; //don't allow the loop to move on
+		{
+			store=decks.size()-i;
+			temp=decks[store];
+			decks[store]=decks[i];
+			decks[i]=temp;
+		}
+		for(int j=0;j<(decks.size()-random_number);j++)
+		{
+			store=decks.size()-j;
+			temp=decks[store];
+			decks[store]=decks[j];
+			decks[j]=temp;
+		}
 	}
 
-	//swap values
-	for(int i=51;i<=0;i--)
-	{
-		//swaps value with random value
-		temp=deck_of_cards[i];
-		deck_of_cards[i]=deck_of_cards[index];
-		deck_of_cards[index]=temp;
 
-	}
+	
 }
 
-Value value_setter(int j)
-{
-	Value value;
-	if(j==0)
-	{
-	 value=ace;
-	 return value;
-	}
-	if(j==1)
-	{
-	 value=deuce;
-	 return value;
-	}
-	if(j==2)
-	{
-	 value=trey;
-	 return value;
-	}
-	if(j==3)
-	{
-	 value=four;
-	 return value;
-	}
-	if(j==4)
-	{
-	 value=five;
-	 return value;
-	}
-	if(j==5)
-	{
-	 value=six;
-	 return value;
-	}
-	if(j==6)
-	{
-	 value=seven;
-	 return value;
-	}
-	if(j==7)
-	{
-	 value=eight;
-	 return value;
-	}
-	if(j==8)
-	{
-	 value=nine;
-	 return value;
-	}
-	if(j==9)
-	{
-	 value=ten;
-	 return value;
-	}
-	if(j==10)
-	{
-	 value=jack;
-	 return value;
-	}
-	if(j==11)
-	{
-	 value=queen;
-	 return value;
-	}
-	if(j==12)
-	{
-	 value=king;
-	 return value;
-	}
-}
-
-Suit suit_setter(int i)
-{
-	Suit suit;
-	if(i==0)
-	{
-	 suit=clubs;
-	 return suit;
-	}
-	if(i==1)
-	{
-	 suit=diamonds;
-	 return suit;
-	}
-	if(i==2)
-	{
-	 suit=hearts;
-	 return suit;
-	}
-	if(i==3)
-	{
-	 suit=spades;
-	 return suit;
-	}
-
-}

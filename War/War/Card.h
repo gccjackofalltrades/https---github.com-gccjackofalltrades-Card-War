@@ -18,13 +18,14 @@ enum Value {deuce=2, trey, four, five, six, seven, eight, nine, ten, jack, king,
 
 class Card {
 public:
-	Card (Value faceValue=deuce, Suit suit = clubs):
+	Card (Value faceValue=ace, Suit suit = clubs):
 		suit (suit), faceValue(faceValue) {}
 	Suit getSuit() { return suit; }
 	Value getValue() { return faceValue; }
 	static string suitName (Suit s);
 	static string valueName (Value v);
 	string name() { return valueName (faceValue) + " of " + suitName(suit);}
+	//Card operator =(Card temp);
 private:
 		Suit suit;
 		Value faceValue;

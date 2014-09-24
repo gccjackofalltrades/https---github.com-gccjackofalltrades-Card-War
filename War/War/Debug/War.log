@@ -1,4 +1,4 @@
-﻿Build started 9/24/2014 1:07:24 PM.
+﻿Build started 9/24/2014 2:51:40 PM.
      1>Project "C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Card.cpp Deck.cpp GameManager.cpp Main.cpp Player.cpp
@@ -11,8 +11,14 @@
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(7): error C2027: use of undefined type 'Card'
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(13): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'Card' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, Card)'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(17): error C2027: use of undefined type 'Card'
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(23): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'Card' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, Card)'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(57): error C2027: use of undefined type 'Card'
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(58): error C2079: 'holder' uses undefined class 'Card'
@@ -37,15 +43,34 @@
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(21): error C2027: use of undefined type 'Card'
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(40): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(41): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(42): error C2079: 'object' uses undefined class 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(43): error C2228: left of '.faceValue' must have class/struct/union
+                 type is 'int'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(43): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(44): error C2228: left of '.suit' must have class/struct/union
+                 type is 'int'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(44): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(47): error C2079: 'cards' uses undefined class 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(57): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'Card' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, Card)'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(57): error C3861: 'Card': identifier not found
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(65): error C2079: 'temp' uses undefined class 'Card'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(72): warning C4552: '<' : operator has no effect; expected operator with side-effect
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(101): error C2440: '=' : cannot convert from 'Card' to 'int'
                  Source or target has incomplete type
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(102): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'Card' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, Card)'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(103): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
-                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(31): could be 'Card &Card::operator =(const Card &)'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
                  while trying to match the argument list '(Card, int)'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.h(11): error C2011: 'deck' : 'class' type redefinition
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(20) : see declaration of 'deck'
@@ -60,15 +85,34 @@
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(21): error C2027: use of undefined type 'Card'
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(40): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(41): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(42): error C2079: 'object' uses undefined class 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(43): error C2228: left of '.faceValue' must have class/struct/union
+                 type is 'int'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(43): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(44): error C2228: left of '.suit' must have class/struct/union
+                 type is 'int'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(44): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(47): error C2079: 'cards' uses undefined class 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(57): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'Card' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, Card)'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(57): error C3861: 'Card': identifier not found
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(65): error C2079: 'temp' uses undefined class 'Card'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(72): warning C4552: '<' : operator has no effect; expected operator with side-effect
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(101): error C2440: '=' : cannot convert from 'Card' to 'int'
                  Source or target has incomplete type
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(102): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'Card' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, Card)'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(103): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
-                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(31): could be 'Card &Card::operator =(const Card &)'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
                  while trying to match the argument list '(Card, int)'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.h(11): error C2011: 'deck' : 'class' type redefinition
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(20) : see declaration of 'deck'
@@ -111,22 +155,36 @@
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(9): error C2027: use of undefined type 'Card'
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(27): error C2079: 'cards' uses undefined class 'Card'
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(37): error C3861: 'Card': identifier not found
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(41): error C3867: 'deck::shuffle_deck': function call missing argument list; use '&deck::shuffle_deck' to create a pointer to member
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(14): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'Card' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, Card)'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(36): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'Card' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, Card)'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(36): error C3861: 'Card': identifier not found
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(46): error C2079: 'temp' uses undefined class 'Card'
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(50): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(53): warning C4552: '<' : operator has no effect; expected operator with side-effect
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(83): error C2440: '=' : cannot convert from 'Card' to 'int'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(48): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(50): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(56): error C2440: '=' : cannot convert from 'Card' to 'int'
                  Source or target has incomplete type
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(85): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
-                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(31): could be 'Card &Card::operator =(const Card &)'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(57): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'Card' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, Card)'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(58): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
                  while trying to match the argument list '(Card, int)'
-         Generating Code...
-         Skipping... (no relevant changes detected)
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(62): error C2440: '=' : cannot convert from 'Card' to 'int'
+                 Source or target has incomplete type
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(63): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'Card' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, Card)'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(64): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(28): could be 'Card Card::operator =(Card)'
+                 while trying to match the argument list '(Card, int)'
          Card.cpp
+         Generating Code...
      1>Done Building Project "C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.43
+Time Elapsed 00:00:04.20
