@@ -36,3 +36,12 @@ string Card::valueName (Value v) {
 	default: throw std::out_of_range("Face value out of range");
 	}
 }
+
+/*Card operator =(Card temp)
+{
+	Card object;
+	object.faceValue=temp.faceValue;
+	object.suit=temp.suit;
+	return object;
+
+}*/
