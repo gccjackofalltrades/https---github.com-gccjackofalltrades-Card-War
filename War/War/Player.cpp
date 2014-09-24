@@ -75,3 +75,5 @@ void player::addToHand (Card c)
 	handSize++;
 	cardTotal++;
 }
+
+
