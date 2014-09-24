@@ -2,7 +2,7 @@
 #define GAMEMANAGER_
 
 #include "Card.h"
-#include "Deck.h"
+#include "Deck and Shuffler.cpp"
 #include "Player.h"
 
 class gameManager

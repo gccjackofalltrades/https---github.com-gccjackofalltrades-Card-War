@@ -3,15 +3,17 @@
 
 #include "Card.h"
 #include <vector>
+#include "Deck and Shuffler.cpp"
+using std::vector;
 
 class deck
 {
 public:
 	Card getCard (int location);
 	void setCard (Card c, int location);
-	friend void shuffleDeck();
+	friend void shuffle_deck();
 private:
-	vector <Card> deck;
+	vector<Card> deck_of_cards;
 };
 
 #endif

@@ -7,8 +7,8 @@
                 Suit, Value, and Card.
 */
 
-#ifndef ___CARD_H
-#define ___CARD_H
+//#ifndef CARD_CPP
+//#define CARD_CPP
 
 #include <string>
 using std::string;
@@ -31,4 +31,4 @@ private:
 };
 
 
-#endif
+//#endif /* CARD_CPP */

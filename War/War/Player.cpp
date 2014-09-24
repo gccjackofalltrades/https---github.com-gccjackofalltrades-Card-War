@@ -1,6 +1,7 @@
 #include "Player.h"
 #include "Card.h"
 #include <vector>
+using std::vector;
 
 void player::sethandCard (int location, Card c)
 {
