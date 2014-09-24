@@ -19,10 +19,13 @@ void deck::size_the_deck()
 	deck_of_cards.resize(52);
 }
 
+
+
 void deck::create_deck()
 {
 	deck setter;
 	setter.size_the_deck(); //set size of deck
+
 	Card cards;
 	Suit suit;
 	Value value;
@@ -59,8 +62,9 @@ void deck::shuffle_deck()
 			if(index_storer[j]==index) //run throuhg all 52 value in index sorter, if one equals if return false
 			{
 				if_switch=false;
+				break; //out of the inner loop
 			} 
-			else if(j==51)//ran through all 52 cards and haven't found a match
+			else if((j==51))//ran through all 52 cards and haven't found a match
 			{
 				if_switch=true;
 			}
