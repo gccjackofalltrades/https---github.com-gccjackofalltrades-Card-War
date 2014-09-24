@@ -37,7 +37,7 @@ string Card::valueName (Value v) {
 	}
 }
 
-/*Card Card::operator =(Card temp)
+/*Card operator =(Card temp)
 {
 	Card object;
 	object.faceValue=temp.faceValue;

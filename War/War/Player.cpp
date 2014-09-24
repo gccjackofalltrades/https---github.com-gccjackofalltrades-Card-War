@@ -10,7 +10,7 @@ Card player::getHandCard (int location)
 
 void player::setHandCard (int location, Card c)
 {
-	hand[location] = c;
+	hand[location]=c;
 }
 
 Card player::getDiscardCard(int location)
@@ -20,7 +20,7 @@ Card player::getDiscardCard(int location)
 
 void player::setDiscardCard(int location, Card d)
 {
-	discard[location] = d;
+	discard[location]=d;
 }
 
 int player::getHandSize()
