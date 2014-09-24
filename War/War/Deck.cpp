@@ -2,15 +2,16 @@
 #include "Deck.h"
 #include "Card.h"
 #include <vector>
+#include<ctime>
 using std::vector;
 
 Card deck::getCard(int location)
 {
-	return deck[location];
+	return deck_of_cards[location];
 }
 void deck::setCard(Card c, int location)
 {
-	deck[location] = c;
+	deck_of_cards[location] = c;
 }
 
 void deck::size_the_deck()
@@ -18,7 +19,7 @@ void deck::size_the_deck()
 	deck_of_cards.resize(52);
 }
 
-void create_deck()
+void deck::create_deck()
 {
 	deck setter;
 	setter.size_the_deck(); //set size of deck
@@ -36,9 +37,10 @@ void create_deck()
 		  k++; //increment k, will go up to 52
 		}
 	}
+	setter.shuffle_deck; //calls to shuffle the deck
 }
 
-void shuffle_deck()
+void deck::shuffle_deck()
 {
 	Card temp;//stores the card object
 	int index=0;//think of index as k, the index of the deck_of_cards_vector that holds an object

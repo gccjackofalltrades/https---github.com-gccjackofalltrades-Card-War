@@ -1,50 +1,177 @@
-﻿Build started 9/23/2014 9:14:33 PM.
+﻿Build started 9/24/2014 9:57:44 AM.
      1>Project "C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Card.cpp "Deck and Shuffler.cpp" GameManager.cpp Main.cpp Player.cpp
-         GameManager.cpp
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(72): warning C4552: '<' : operator has no effect; expected operator with side-effect
-         Generating Code...
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(176): warning C4715: 'value_setter' : not all control paths return a value
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(202): warning C4715: 'suit_setter' : not all control paths return a value
-         Compiling...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Card.cpp Deck.cpp GameManager.cpp Main.cpp Player.cpp
          Player.cpp
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(8): error C2059: syntax error : '<<'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(11): error C2059: syntax error : 'bad suffix on number'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(13): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(13): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(16): error C2011: 'Suit' : 'enum' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(16) : see declaration of 'Suit'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(17): error C2011: 'Value' : 'enum' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(17) : see declaration of 'Value'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19): error C2011: 'Card' : 'class' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(6): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(7): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(8): error C2065: 'hand' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(11): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(13): error C2065: 'hand' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(16): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(17): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(18): error C2065: 'discard' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(21): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(23): error C2065: 'discard' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(26): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(28): error C2065: 'handSize' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(31): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(33): error C2065: 'handSize' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(36): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(38): error C2065: 'discardSize' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(41): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(43): error C2065: 'discardSize' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(43): error C2065: 'discard' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(43): error C2228: left of '.size' must have class/struct/union
+                 type is ''unknown-type''
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(46): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(48): error C2065: 'cardTotal' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(51): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(53): error C2065: 'cardTotal' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(56): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(57): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(58): error C2079: 'holder' uses undefined class 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(58): error C2065: 'hand' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(58): error C2228: left of '.size' must have class/struct/union
+                 type is ''unknown-type''
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(59): error C2065: 'hand' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(59): error C2228: left of '.resize' must have class/struct/union
+                 type is ''unknown-type''
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(59): error C2228: left of '.size' must have class/struct/union
+                 type is ''unknown-type''
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(60): error C2065: 'handSize' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(61): error C2065: 'cardTotal' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(65): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(67): error C2065: 'discard' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(67): error C2228: left of '.push_back' must have class/struct/union
+                 type is ''unknown-type''
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(68): error C2065: 'discardSize' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(69): error C2065: 'cardTotal' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(72): error C2653: 'player' : is not a class or namespace name
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(74): error C2065: 'hand' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(74): error C2228: left of '.push_back' must have class/struct/union
+                 type is ''unknown-type''
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(75): error C2065: 'handSize' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(76): error C2065: 'cardTotal' : undeclared identifier
          Main.cpp
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(16): error C2011: 'Suit' : 'enum' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(16) : see declaration of 'Suit'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(17): error C2011: 'Value' : 'enum' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(17) : see declaration of 'Value'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19): error C2011: 'Card' : 'class' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(8): error C2059: syntax error : '<<'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(11): error C2059: syntax error : 'bad suffix on number'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(13): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(13): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(11): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(21): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(47): error C2079: 'cards' uses undefined class 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(57): error C3861: 'Card': identifier not found
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(65): error C2079: 'temp' uses undefined class 'Card'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(72): warning C4552: '<' : operator has no effect; expected operator with side-effect
-         Generating Code...
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(202): warning C4715: 'suit_setter' : not all control paths return a value
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(176): warning C4715: 'value_setter' : not all control paths return a value
-         Skipping... (no relevant changes detected)
-         Deck and Shuffler.cpp
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(101): error C2440: '=' : cannot convert from 'Card' to 'int'
+                 Source or target has incomplete type
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(103): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(31): could be 'Card &Card::operator =(const Card &)'
+                 while trying to match the argument list '(Card, int)'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(15): error C2061: syntax error : identifier 'player'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(16): error C2061: syntax error : identifier 'player'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(18): error C2061: syntax error : identifier 'player'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.h(11): error C2011: 'deck' : 'class' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(20) : see declaration of 'deck'
+         GameManager.cpp
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(16): error C2011: 'Suit' : 'enum' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(16) : see declaration of 'Suit'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(17): error C2011: 'Value' : 'enum' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(17) : see declaration of 'Value'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19): error C2011: 'Card' : 'class' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(11): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.cpp(21): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(47): error C2079: 'cards' uses undefined class 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(57): error C3861: 'Card': identifier not found
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(65): error C2079: 'temp' uses undefined class 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(69): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(72): warning C4552: '<' : operator has no effect; expected operator with side-effect
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(101): error C2440: '=' : cannot convert from 'Card' to 'int'
+                 Source or target has incomplete type
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(103): error C2679: binary '=' : no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(31): could be 'Card &Card::operator =(const Card &)'
+                 while trying to match the argument list '(Card, int)'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(8): error C2059: syntax error : '<<'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(11): error C2059: syntax error : 'bad suffix on number'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(13): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.h(13): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(15): error C2061: syntax error : identifier 'player'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(16): error C2061: syntax error : identifier 'player'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(18): error C2061: syntax error : identifier 'player'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.h(11): error C2011: 'deck' : 'class' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck and shuffler.cpp(20) : see declaration of 'deck'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(14): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(14): error C2228: left of '.getValue' must have class/struct/union
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(23): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(23): error C2228: left of '.getValue' must have class/struct/union
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(26): error C2065: 'player' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(26): error C2146: syntax error : missing ')' before identifier 'human'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(26): error C2761: 'void gameManager::war(void)' : member function redeclaration not allowed
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(26): error C2059: syntax error : ')'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(27): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(27): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(105): error C2065: 'player' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(105): error C2146: syntax error : missing ')' before identifier 'human'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(105): error C2761: 'bool gameManager::gameOver(void)' : member function redeclaration not allowed
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(105): error C2059: syntax error : ')'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(106): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(106): error C2447: '{' : missing function header (old-style formal list?)
+         Deck.cpp
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(16): error C2011: 'Suit' : 'enum' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(16) : see declaration of 'Suit'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(17): error C2011: 'Value' : 'enum' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(17) : see declaration of 'Value'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19): error C2011: 'Card' : 'class' type redefinition
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(8): error C2027: use of undefined type 'Card'
+                 c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\card.h(19) : see declaration of 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(9): error C2275: 'deck' : illegal use of this type as an expression
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(13): error C2143: syntax error : missing ';' before '['
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(13): error C2337: 'location' : attribute not found
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(13): error C2143: syntax error : missing ';' before '='
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(25): error C2079: 'cards' uses undefined class 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(35): error C2065: 'deck_of_cards' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(35): error C3861: 'Card': identifier not found
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(43): error C2079: 'temp' uses undefined class 'Card'
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(47): error C3861: 'time': identifier not found
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(50): warning C4552: '<' : operator has no effect; expected operator with side-effect
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(79): error C2065: 'deck_of_cards' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(80): error C2065: 'deck_of_cards' : undeclared identifier
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(81): error C2065: 'deck_of_cards' : undeclared identifier
          Card.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\Debug\War.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\Debug\War.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\Debug\War.lib" /MACHINE:X86 Debug\Card.obj
-         "Debug\Deck and Shuffler.obj"
-         Debug\Deck.obj
-         Debug\GameManager.obj
-         Debug\Main.obj
-         Debug\Player.obj
-     1>Deck and Shuffler.obj : error LNK2005: "public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Card::suitName(enum Suit)" (?suitName@Card@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Suit@@@Z) already defined in Card.obj
-     1>Deck and Shuffler.obj : error LNK2005: "public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Card::valueName(enum Value)" (?valueName@Card@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Value@@@Z) already defined in Card.obj
-     1>GameManager.obj : error LNK2005: "public: void __thiscall deck::create_deck(void)" (?create_deck@deck@@QAEXXZ) already defined in Deck and Shuffler.obj
-     1>GameManager.obj : error LNK2005: "public: void __thiscall deck::shuffle_deck(void)" (?shuffle_deck@deck@@QAEXXZ) already defined in Deck and Shuffler.obj
-     1>GameManager.obj : error LNK2005: "public: void __thiscall deck::size_the_deck(void)" (?size_the_deck@deck@@QAEXXZ) already defined in Deck and Shuffler.obj
-     1>GameManager.obj : error LNK2005: "public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Card::suitName(enum Suit)" (?suitName@Card@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Suit@@@Z) already defined in Card.obj
-     1>GameManager.obj : error LNK2005: "enum Suit __cdecl suit_setter(int)" (?suit_setter@@YA?AW4Suit@@H@Z) already defined in Deck and Shuffler.obj
-     1>GameManager.obj : error LNK2005: "public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Card::valueName(enum Value)" (?valueName@Card@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Value@@@Z) already defined in Card.obj
-     1>GameManager.obj : error LNK2005: "enum Value __cdecl value_setter(int)" (?value_setter@@YA?AW4Value@@H@Z) already defined in Deck and Shuffler.obj
-     1>Main.obj : error LNK2005: "public: void __thiscall deck::create_deck(void)" (?create_deck@deck@@QAEXXZ) already defined in Deck and Shuffler.obj
-     1>Main.obj : error LNK2005: "public: void __thiscall deck::shuffle_deck(void)" (?shuffle_deck@deck@@QAEXXZ) already defined in Deck and Shuffler.obj
-     1>Main.obj : error LNK2005: "public: void __thiscall deck::size_the_deck(void)" (?size_the_deck@deck@@QAEXXZ) already defined in Deck and Shuffler.obj
-     1>Main.obj : error LNK2005: "public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Card::suitName(enum Suit)" (?suitName@Card@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Suit@@@Z) already defined in Card.obj
-     1>Main.obj : error LNK2005: "enum Suit __cdecl suit_setter(int)" (?suit_setter@@YA?AW4Suit@@H@Z) already defined in Deck and Shuffler.obj
-     1>Main.obj : error LNK2005: "public: static class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Card::valueName(enum Value)" (?valueName@Card@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4Value@@@Z) already defined in Card.obj
-     1>Main.obj : error LNK2005: "enum Value __cdecl value_setter(int)" (?value_setter@@YA?AW4Value@@H@Z) already defined in Deck and Shuffler.obj
-     1>C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\Debug\War.exe : fatal error LNK1169: one or more multiply defined symbols found
+         Generating Code...
      1>Done Building Project "C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.15
+Time Elapsed 00:00:04.34
