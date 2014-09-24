@@ -25,7 +25,7 @@ public:
 	static string suitName (Suit s);
 	static string valueName (Value v);
 	string name() { return valueName (faceValue) + " of " + suitName(suit);}
-	friend Card operator =(Card temp); //friend function
+	//friend Card operator =(Card temp); //friend function
 private:
 		Suit suit;
 		Value faceValue;
