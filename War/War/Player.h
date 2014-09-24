@@ -5,6 +5,10 @@
 #include "Card.h"
 #include <vector>
 using std::vector;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0ba59b10817471daa91a60775de09c99a5aedd81
 class player
 {
 public:
