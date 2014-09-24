@@ -24,7 +24,8 @@ public:
 	void addToDiscard(Card c);
 	Card playNextCard (); // plays a card by returning the end value of the hand vector and removing it
 	// from the vector. Resizes handSize and cardTotal
-	friend void shuffleHand (player shufflePlayer);
+	void shuffleHand ();
+	void discard_to_hand();
 private:
 	int handSize;
 	int discardSize;
