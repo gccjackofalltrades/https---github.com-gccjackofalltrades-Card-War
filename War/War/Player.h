@@ -19,7 +19,7 @@ public:
 	void setDiscardSize();
 	int getCardTotal();
 	void setCardTotal(int total);
-	friend void shuffleHand ();
+	friend void shuffleHand (player shufflePlayer);
 private:
 	int handSize;
 	int discardSize;
