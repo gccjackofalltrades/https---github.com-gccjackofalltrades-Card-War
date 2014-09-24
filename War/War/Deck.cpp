@@ -2,6 +2,7 @@
 #include "Deck.h"
 #include "Card.h"
 #include <vector>
+using std::vector;
 
 Card deck::getCard(int location)
 {
