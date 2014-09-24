@@ -1,6 +1,7 @@
 #include "Player.h"
 #include "Card.h"
 #include <vector>
+#include <ctime>
 using std::vector;
 
 Card player::getHandCard (int location)
@@ -75,3 +76,48 @@ void player::addToHand (Card c)
 	handSize++;
 	cardTotal++;
 }
+
+void player::shuffleHand ()
+{
+	int store; //temporary storage for indices
+
+	Card temp; //storage for object
+
+	hand.resize(discardSize);
+	for (int i = 0; i < hand.size(); i++)
+	{
+		hand[i] = discard[i];
+	}
+
+	srand(time(0));
+	int random_number=rand()%hand.size()+1;//sets up a random number based on the decks size
+
+	for(int i=0; i<hand.size();i++)
+	{
+
+		//swap the first and last elements
+		if((i+1)==hand.size())
+		{
+			store=hand.size();
+			temp=hand[store];
+			hand[store]=hand[0];
+			hand[0]=temp;
+		}
+		else
+		{
+			store=hand.size()-i;
+			temp=hand[store];
+			hand[store]=hand[i];
+			hand[i]=temp;
+		}
+		for(int j=0;j<(hand.size()-random_number);j++)
+		{
+			store=hand.size()-j;
+			temp=hand[store];
+			hand[store]=hand[j];
+			hand[j]=temp;
+		}
+	}
+
+}
+
