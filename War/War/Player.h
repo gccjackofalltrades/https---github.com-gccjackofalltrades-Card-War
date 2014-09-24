@@ -5,13 +5,16 @@
 #include "Card.h"
 #include <vector>
 using std::vector;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0ba59b10817471daa91a60775de09c99a5aedd81
 class player
 {
 public:
 	player (int handTotal);
-	Card gethandCard (int location);
-	void sethandCard (int location, Card c);
+	Card getHandCard (int location);
+	void setHandCard (int location, Card c);
 	Card getDiscardCard(int location);
 	void setDiscardCard(int location, Card c);
 	int getHandSize();
@@ -20,14 +23,18 @@ public:
 	void setDiscardSize();
 	int getCardTotal();
 	void setCardTotal(int total);
-	friend void shuffleHand ();
+	void addToHand(Card c);
+	void addToDiscard(Card c);
+	Card playNextCard (); // plays a card by returning the end value of the hand vector and removing it
+	// from the vector. Resizes handSize and cardTotal
+	friend void shuffleHand (player shufflePlayer);
 private:
 	int handSize;
 	int discardSize;
 	int cardTotal;
 	vector <Card> hand;
 	vector <Card> discard;
+	
 };
-
 
 #endif
