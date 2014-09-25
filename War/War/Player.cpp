@@ -129,5 +129,5 @@ void player::shuffleHand ()
 
 void player::initial_hand_size()
 {
-	hand.resize(26);
+	hand.resize(52);
 }
