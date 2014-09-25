@@ -1,21 +1,10 @@
-<<<<<<< HEAD
-﻿Build started 9/24/2014 8:19:38 PM.
+﻿Build started 9/24/2014 8:32:37 PM.
      1>Project "C:\Users\abrahamjh1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" on node 2 (Build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\War.unsuccessfulbuild".
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Card.cpp Deck.cpp GameManager.cpp Main.cpp Player.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GameManager.cpp Main.cpp Player.cpp
          Player.cpp
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(59): error C3867: 'std::vector<_Ty>::size': function call missing argument list; use '&std::vector<_Ty>::size' to create a pointer to member
-                 with
-                 [
-                     _Ty=Card
-                 ]
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(59): error C2296: '-' : illegal, left operand has type 'unsigned int (__thiscall std::vector<_Ty>::* )(void) throw() const'
-                 with
-                 [
-                     _Ty=Card
-                 ]
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(87): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(92): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(95): warning C4018: '<' : signed/unsigned mismatch
@@ -27,42 +16,11 @@
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(19): error C2061: syntax error : identifier 'deck'
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(81): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(97): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(122): error C2059: syntax error : '<<'
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(124): error C2143: syntax error : missing ';' before '{'
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(124): error C2447: '{' : missing function header (old-style formal list?)
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(157): error C2059: syntax error : 'bad suffix on number'
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(159): fatal error C1004: unexpected end-of-file found
-         Deck.cpp
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(49): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(52): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(69): warning C4018: '<' : signed/unsigned mismatch
-         Card.cpp
+     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(147): error C2511: 'void gameManager::deal(deck,player,player)' : overloaded member function not found in 'gameManager'
+                 c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(9) : see declaration of 'gameManager'
          Generating Code...
      1>Done Building Project "C:\Users\abrahamjh1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:04.57
-=======
-﻿Build started 9/24/2014 8:15:13 PM.
-     1>Project "C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\War\War.vcxproj" on node 2 (Build target(s)).
-     1>InitializeBuildStatus:
-         Touching "Debug\War.unsuccessfulbuild".
-       ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GameManager.cpp Main.cpp
-         Main.cpp
-     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.h(19): error C2061: syntax error : identifier 'deck'
-     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\main.cpp(19): error C2660: 'gameManager::deal' : function does not take 3 arguments
-         GameManager.cpp
-     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.h(19): error C2061: syntax error : identifier 'deck'
-     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.cpp(81): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.cpp(97): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.cpp(147): error C2511: 'void gameManager::deal(deck,player,player)' : overloaded member function not found in 'gameManager'
-                 c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.h(9) : see declaration of 'gameManager'
-         Generating Code...
-     1>Done Building Project "C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\War\War.vcxproj" (Build target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:01.15
->>>>>>> bb65a6dcd59bf507828acf6aa705722858286b6d
+Time Elapsed 00:00:03.03
