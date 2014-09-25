@@ -114,8 +114,9 @@ bool gameManager::gameOver(player human, player computer)
 	return false;
 }
 
-void gameManager::printCard(Card c)
+void gameManager::printCard(Card c) //there is a function string name that does this 
 {
+	c.name(); //this is that function
 	cout << c.getValue() << " of " << c.getSuit() << endl;
 }
 

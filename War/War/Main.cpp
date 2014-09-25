@@ -21,17 +21,20 @@ int main()
 	Card computersNextCard = computer.playNextCard();
 	while(!overLord.gameOver(p1, computer))
 	{
-	
+		//it runs through this area
 		if(overLord.isWar(playersNextCard, computersNextCard))
 		{
 			overLord.war(p1, computer, playersNextCard, computersNextCard);
 			if (overLord.gameOver(p1, computer))
 			{
+				cout<<"tapioca"<<endl;//never runs through this
 				break;
 			}
+			cout<<"chocolate"<<endl; //never hits this either
 		}
 		else
 		{
+			//it does only run through this
 			overLord.round(p1, computer);
 		}
 		Card playersNextCard = p1.playNextCard();
