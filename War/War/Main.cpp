@@ -24,9 +24,9 @@ int main()
 	{
 		cout << "Player plays ";
 		Card playersNextCard = p1.playNextCard();
-		cout << endl << "Computer plays ";
+		cout <<" \t \t \t"<< "Computer plays ";
 		Card computersNextCard = computer.playNextCard();
-		cout << endl;
+		cout << endl<<endl;
 		
 
 		if(overLord.isWar(playersNextCard, computersNextCard))
