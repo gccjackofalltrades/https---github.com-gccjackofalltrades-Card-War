@@ -1,48 +1,36 @@
-<<<<<<< HEAD
-﻿Build started 9/24/2014 8:32:37 PM.
-     1>Project "C:\Users\abrahamjh1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" on node 2 (Build target(s)).
+﻿Build started 9/25/2014 2:49:29 PM.
+     1>Project "C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\War\War.vcxproj" on node 2 (Build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\War.unsuccessfulbuild".
+         Creating "Debug\War.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GameManager.cpp Main.cpp Player.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Card.cpp Deck.cpp GameManager.cpp Main.cpp Player.cpp
          Player.cpp
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(87): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(92): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(95): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(113): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\player.cpp(93): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\player.cpp(98): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\player.cpp(101): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\player.cpp(119): warning C4018: '<' : signed/unsigned mismatch
          Main.cpp
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(19): error C2061: syntax error : identifier 'deck'
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\main.cpp(19): error C2660: 'gameManager::deal' : function does not take 3 arguments
          GameManager.cpp
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(19): error C2061: syntax error : identifier 'deck'
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(81): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(97): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(147): error C2511: 'void gameManager::deal(deck,player,player)' : overloaded member function not found in 'gameManager'
-                 c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(9) : see declaration of 'gameManager'
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.cpp(81): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.cpp(97): warning C4018: '<' : signed/unsigned mismatch
+         Deck.cpp
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\deck.cpp(55): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\deck.cpp(58): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\deck.cpp(76): warning C4018: '<' : signed/unsigned mismatch
+         Card.cpp
          Generating Code...
-     1>Done Building Project "C:\Users\abrahamjh1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" (Build target(s)) -- FAILED.
-=======
-﻿Build started 9/25/2014 2:26:28 PM.
-     1>Project "C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GameManager.cpp
-         GameManager.cpp
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(81): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(97): warning C4018: '<' : signed/unsigned mismatch
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\Debug\War.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\Debug\War.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\Debug\War.lib" /MACHINE:X86 Debug\Card.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\Debug\War.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\Debug\War.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\Debug\War.lib" /MACHINE:X86 Debug\Card.obj
          Debug\Deck.obj
          Debug\GameManager.obj
          Debug\Main.obj
          Debug\Player.obj
-         War.vcxproj -> C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\Debug\War.exe
-     1>Done Building Project "C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" (Build target(s)).
->>>>>>> 624be6ced3c2022d549ff2852f1d3efa65c2bbbc
+         War.vcxproj -> C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\Debug\War.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\War.unsuccessfulbuild".
+         Touching "Debug\War.lastbuildstate".
+     1>Done Building Project "C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\War\War.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-<<<<<<< HEAD
-Time Elapsed 00:00:03.03
-=======
-Time Elapsed 00:00:02.84
->>>>>>> 624be6ced3c2022d549ff2852f1d3efa65c2bbbc
+Time Elapsed 00:00:03.46
