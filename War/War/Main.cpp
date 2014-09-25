@@ -21,7 +21,7 @@ int main()
 	Card computersNextCard = computer.playNextCard();
 	while(!overLord.gameOver(p1, computer))
 	{
-
+	
 		if(overLord.isWar(playersNextCard, computersNextCard))
 		{
 			overLord.war(p1, computer, playersNextCard, computersNextCard);
@@ -30,24 +30,12 @@ int main()
 				break;
 			}
 		}
-		else if (overLord.playerWins(playersNextCard, computersNextCard))
+		else
 		{
-			cout << "Player's ";
-			overLord.printCard(playersNextCard);
-			cout << "Beats the Computer's ";
-			overLord.printCard(computersNextCard);
-			p1.addToDiscard(playersNextCard);
-			p1.addToDiscard(computersNextCard);
+			overLord.round();
 		}
-		else if(overLord.playerWins(computersNextCard, playersNextCard))
-		{
-			cout << "Computer's ";
-			overLord.printCard(playersNextCard);
-			cout << "Beats the Player's ";
-			overLord.printCard(computersNextCard);
-			computer.addToDiscard(playersNextCard);
-			computer.addToDiscard(computersNextCard);
-		}
+		Card playersNextCard = p1.playNextCard();
+		Card computersNextCard = computer.playNextCard();
 
 	}
 	return 0;
