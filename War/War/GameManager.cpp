@@ -155,12 +155,13 @@ void gameManager::deal(deck d , player& human, player& computer)
 	cout<<"tangerines"<<endl;
 	for (int i = 0; i < 26; i++)
 	{
-		cout<<"oragnes"<<endl;
+		cout<<"oranges"<<endl;
 		human.setHandCard(i,d.getCard(i)); 
 		
 	}
 	for (int i = 26; i<52; i++)
 	{
+		cout<<"lemons"<<endl;
 		computer.setHandCard(i,d.getCard(i));
 	}
 	cout<<"bananas"<<endl;
