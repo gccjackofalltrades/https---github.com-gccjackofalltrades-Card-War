@@ -146,23 +146,17 @@ void gameManager::round(player human, player computer)
 
 void gameManager::deal(deck d , player& human, player& computer)
 {
-	cout<<"apples"<<endl;
 	human.initial_hand_size();
 	computer.initial_hand_size();
-	cout<<"pi"<<endl;
 	//need a call to create the deck
 	d.create_deck(); //when added, oranges doesn't appear
-	cout<<"tangerines"<<endl;
 	for (int i = 0; i < 26; i++)
 	{
-		cout<<"oranges"<<endl;
 		human.setHandCard(i,d.getCard(i)); 
 		
 	}
 	for (int i = 26; i<52; i++)
 	{
-		cout<<"lemons"<<endl;
 		computer.setHandCard(i,d.getCard(i));
 	}
-	cout<<"bananas"<<endl;
 }
