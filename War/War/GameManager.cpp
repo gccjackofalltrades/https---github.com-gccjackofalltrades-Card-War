@@ -139,6 +139,11 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		cout << endl;
 		human.addToDiscard(humansCard);
 		human.addToDiscard(computersCard);
+		//add to shuffle if computers card is out
+		if(computer.getHandSize()==0)
+		{
+			computer.shuffleHand();
+		}
 	}
 	else if(!playerWins(humansCard, computersCard))
 	{
@@ -149,6 +154,11 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		cout << endl;
 		computer.addToDiscard(humansCard);
 		computer.addToDiscard(computersCard);
+		if(human.getHandSize()==0)
+		{
+			//add to shuffle if players card is out
+			human.shuffleHand();
+		}
 	}
 	cout << "Enter Q to quit, any other character to play next round" << endl;
 	cin >> continueChar;
