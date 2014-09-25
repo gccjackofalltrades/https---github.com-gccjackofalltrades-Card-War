@@ -86,13 +86,14 @@ void gameManager::war(player human, player computer, Card humanCard, Card comput
 		cout << human_cards[human_cards.size()-1].name() << endl;
 		cout << "\t \t beats Computer's \t ";
 		cout << computer_cards[computer_cards.size()-1].name() << endl;
-		cout << endl << "Human gains:\t ";
+		cout << endl << "Human gains: ";
 		for (int i = 0; i < computer_cards.size(); i++)
 		{
 			cout << computer_cards[i].name();
 			cout << " ";
 			human.addToDiscard(computer_cards [i]);
 			human.addToDiscard(human_cards[i]);
+			cout<<endl;
 		}
 	}
 	else // copies human's cards into computer's discard if computer wins war
@@ -102,13 +103,14 @@ void gameManager::war(player human, player computer, Card humanCard, Card comput
 		cout << computer_cards[computer_cards.size()-1].name() << endl;
 		cout << " \t \t beats human's \t ";
 		cout << human_cards[human_cards.size()-1].name() << endl;
-		cout << endl << "Computer gains: \t ";
+		cout << endl << "Computer gains: ";
 		for (int i = 0; i < human_cards.size(); i++)
 		{
 			cout << human_cards[i].name();
 			cout << " ";
 			computer.addToDiscard(computer_cards[i]);
 			computer.addToDiscard(human_cards[i]);
+			cout<<endl;
 		}
 	}
 	return;
@@ -142,7 +144,7 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 	//Card computersCard = computer.playNextCard();
 	if (playerWins(humansCard, computersCard) && !isWar(humansCard,computersCard))
 	{
-		cout << " \t Player's ";
+		cout << "\tPlayer's ";
 		cout << humansCard.name();
 		cout << " Beats the Computer's ";
 		cout << computersCard.name();
@@ -152,13 +154,21 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		//add to shuffle if computers card is out
 		if(computer.getHandSize()==0)
 		{
+			//safety check for discard pile
+			if(computer.getDiscardSize()==0)
+			{
+				char c;
+				cout<<"You win enter a letter to exit"<<endl;
+				cin>>c;
+				exit(0);
+			}
 			cout<<"Commencing shuffling of computer hand"<<endl;
 			computer.shuffleHand();
 		}
 	}
 	else if(!playerWins(humansCard, computersCard))
 	{
-		cout << " \t Computer's ";
+		cout << "\tComputer's ";
 		cout << computersCard.name();
 		cout << " Beats the Player's ";
 		cout << humansCard.name();
@@ -167,6 +177,14 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		computer.addToDiscard(computersCard);
 		if(human.getHandSize()==0)
 		{
+			//safety check for discard pile
+			if(human.getDiscardSize()==0)
+			{
+				char c;
+				cout<<"You lose enter a letter to exit"<<endl;
+				cin>>c;
+				exit(0);
+			}
 			//add to shuffle if players card is out
 			cout<<"Now shuffling human hand"<<endl;
 			human.shuffleHand();
@@ -179,8 +197,11 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 	continueChar = toupper(continueChar);
 	if (continueChar == 'Q')
 	{
+		char c;
 		human.setCardTotal(0);
 		cout<<"Player forfeits, Computer Wins"<<endl;
+		cout<<"Enter character to exit"<<endl;
+		cin>>c;
 		exit(0);
 	}
 }
