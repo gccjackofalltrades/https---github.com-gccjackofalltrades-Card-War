@@ -119,7 +119,10 @@ void gameManager::printCard(Card c)
 	cout << c.getValue() << " of " << c.getSuit() << endl;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Nate
 void gameManager::round(player human, player computer)
 {
 	Card humansCard = human.playNextCard();
@@ -144,7 +147,11 @@ void gameManager::round(player human, player computer)
 		}
 }
 
+<<<<<<< HEAD
 void gameManager::deal(deck d , player& human, player& computer)
+=======
+void gameManager::deal(deck d, player human, player computer)
+>>>>>>> origin/Nate
 {
 	//sets the size , using the player function
 	human.initial_hand_size();

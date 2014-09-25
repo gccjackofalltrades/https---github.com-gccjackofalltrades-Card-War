@@ -1,10 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿Build started 9/25/2014 10:17:06 AM.
      1>Project "C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GameManager.cpp Main.cpp
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/Nate
 ﻿Build started 9/24/2014 8:19:38 PM.
      1>Project "C:\Users\abrahamjh1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" on node 2 (Build target(s)).
      1>InitializeBuildStatus:
@@ -26,11 +29,15 @@
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(92): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(95): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\player.cpp(113): warning C4018: '<' : signed/unsigned mismatch
+<<<<<<< HEAD
+>>>>>>> origin/Nate
+=======
 >>>>>>> origin/Nate
          Main.cpp
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(19): error C2061: syntax error : identifier 'deck'
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\main.cpp(19): error C2660: 'gameManager::deal' : function does not take 3 arguments
          GameManager.cpp
+<<<<<<< HEAD
 <<<<<<< HEAD
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(18): error C2061: syntax error : identifier 'deck'
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(81): warning C4018: '<' : signed/unsigned mismatch
@@ -38,6 +45,8 @@
      1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(124): error C2511: 'void gameManager::deal(deck,player &,player &)' : overloaded member function not found in 'gameManager'
                  c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(9) : see declaration of 'gameManager'
 =======
+=======
+>>>>>>> origin/Nate
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.h(19): error C2061: syntax error : identifier 'deck'
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(81): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(97): warning C4018: '<' : signed/unsigned mismatch
@@ -51,6 +60,7 @@
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(52): warning C4018: '<' : signed/unsigned mismatch
      1>c:\users\abrahamjh1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\deck.cpp(69): warning C4018: '<' : signed/unsigned mismatch
          Card.cpp
+<<<<<<< HEAD
 >>>>>>> origin/Nate
          Generating Code...
      1>Done Building Project "C:\Users\abrahamjh1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" (Build target(s)) -- FAILED.
@@ -60,6 +70,37 @@ Build FAILED.
 <<<<<<< HEAD
 Time Elapsed 00:00:01.98
 =======
+Time Elapsed 00:00:04.57
+=======
+﻿Build started 9/24/2014 8:15:13 PM.
+     1>Project "C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\War\War.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\War.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GameManager.cpp Main.cpp
+         Main.cpp
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.h(19): error C2061: syntax error : identifier 'deck'
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\main.cpp(19): error C2660: 'gameManager::deal' : function does not take 3 arguments
+         GameManager.cpp
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.h(19): error C2061: syntax error : identifier 'deck'
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.cpp(81): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.cpp(97): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.cpp(147): error C2511: 'void gameManager::deal(deck,player,player)' : overloaded member function not found in 'gameManager'
+                 c:\users\hayesnj1\documents\github\https---github.com-gccjackofalltrades-card-war.git\war\war\gamemanager.h(9) : see declaration of 'gameManager'
+         Generating Code...
+     1>Done Building Project "C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\War\War.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.15
+>>>>>>> bb65a6dcd59bf507828acf6aa705722858286b6d
+>>>>>>> origin/Nate
+=======
+         Generating Code...
+     1>Done Building Project "C:\Users\abrahamjh1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
 Time Elapsed 00:00:04.57
 =======
 ﻿Build started 9/24/2014 8:15:13 PM.
