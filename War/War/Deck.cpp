@@ -54,7 +54,6 @@ void deck::shuffle_deck(vector<Card>& decks)
 
 	srand(time(0));
 	int random_number=rand()%decks.size()+1;//sets up a random number based on the decks size
-	cout<<"cookies"<<endl;
 	for(int i=0;i<decks.size();i++)
 	{
 		if((i+1)==decks.size())

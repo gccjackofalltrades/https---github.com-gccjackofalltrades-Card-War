@@ -12,6 +12,8 @@ using std::endl;
 
 int main()
 {
+	/*deck test;
+	test.create_deck();*/
 	deck theDeck;
 	theDeck.create_deck();
 	player p1(26);
@@ -22,6 +24,7 @@ int main()
 	Card computersNextCard = computer.playNextCard();
 	while(!overLord.gameOver(p1, computer))
 	{
+		
 	
 		if(overLord.isWar(playersNextCard, computersNextCard))
 		{

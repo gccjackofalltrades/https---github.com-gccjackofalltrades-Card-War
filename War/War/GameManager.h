@@ -18,7 +18,7 @@ public:
 	// Returns true if one player is completely out of cards.
     void  deal(deck d , player& human, player& computer);
 	// distributes the cards between the players.
-	void printCard(Card c); // cout the value and suit of a card
+	//void printCard(Card c); // cout the value and suit of a card
 };
 
 
