@@ -115,16 +115,12 @@ bool gameManager::gameOver(player human, player computer)
 	return false;
 }
 
-<<<<<<< HEAD
 void gameManager::printCard(Card c) //there is a function string name that does this 
 {
 	cout << c.name() << endl; //this is that function
 	//cout << c.getValue() << " of " << c.getSuit() << endl;
 }
 
-
-=======
->>>>>>> origin/Nate
 void gameManager::round(player human, player computer)
 {
 	char continueChar = 'a';
