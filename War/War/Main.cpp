@@ -12,8 +12,7 @@ using std::endl;
 
 int main()
 {
-	/*deck test;
-	test.create_deck();*/
+
 	deck theDeck;
 	theDeck.create_deck();
 	player p1(26);

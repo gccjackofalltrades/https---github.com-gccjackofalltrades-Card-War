@@ -110,10 +110,12 @@ bool gameManager::gameOver(player human, player computer)
 {
 	if(human.getCardTotal() == 0)
 	{
+		cout<<"Player loses =( Computer wins"<<endl;
 		return true;
 	}
 	if (computer.getCardTotal() == 0)
 	{
+		cout<<"Player Wins! Computer loses!"<<endl;
 		return true;
 	}
 	return false;
@@ -166,6 +168,9 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 	if (continueChar == 'Q')
 	{
 		human.setCardTotal(0);
+		cout<<"Player forfeits, Computer Wins"<<endl;
+		exit(0);
+		cout<<"apples"<<endl;
 	}
 }
 
