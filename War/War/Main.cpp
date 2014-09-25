@@ -20,14 +20,15 @@ int main()
 	player computer(26);
 	gameManager overLord;
 	overLord.deal(theDeck, p1, computer);
-	cout << "Player plays ";
-	Card playersNextCard = p1.playNextCard();
-	cout << endl << "Computer plays ";
-	Card computersNextCard = computer.playNextCard();
-	cout << endl;
+
 	while(!overLord.gameOver(p1, computer))
 	{
-		//it runs through this area
+		cout << "Player plays ";
+		Card playersNextCard = p1.playNextCard();
+		cout << endl << "Computer plays ";
+		Card computersNextCard = computer.playNextCard();
+		cout << endl;
+		
 
 		if(overLord.isWar(playersNextCard, computersNextCard))
 		{
@@ -36,18 +37,13 @@ int main()
 		}
 		else
 		{
-			//it does only run through this
+			
 			overLord.round(p1, computer, playersNextCard, computersNextCard);
 		}
 		if (overLord.gameOver(p1, computer))
 		{
 			break;
 		}
-		cout << "Player plays ";
-		playersNextCard = p1.playNextCard();
-		cout << endl << "Computer plays ";
-		computersNextCard = computer.playNextCard();
-		cout << endl;
 	}
 	return 0;
 }
