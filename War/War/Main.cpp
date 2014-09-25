@@ -12,7 +12,32 @@ using std::endl;
 
 int main()
 {
+	deck theDeck;
+	player p1(26);
+	player computer(26);
+	gameManager overLord;
+	overLord.deal(theDeck, p1, computer);
+	Card playersNextCard = p1.playNextCard();
+	Card computersNextCard = computer.playNextCard();
+	while(!overLord.gameOver(p1, computer))
+	{
 	
+		if(overLord.isWar(playersNextCard, computersNextCard))
+		{
+			overLord.war(p1, computer, playersNextCard, computersNextCard);
+			if (overLord.gameOver(p1, computer))
+			{
+				break;
+			}
+		}
+		else
+		{
+			overLord.round(p1, computer);
+		}
+		Card playersNextCard = p1.playNextCard();
+		Card computersNextCard = computer.playNextCard();
+
+	}
 	return 0;
 }
 

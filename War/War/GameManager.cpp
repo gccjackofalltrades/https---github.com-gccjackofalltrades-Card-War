@@ -119,7 +119,31 @@ void gameManager::printCard(Card c)
 	cout << c.getValue() << " of " << c.getSuit() << endl;
 }
 
-//this function runs once at the beginning of the program
+
+void gameManager::round(player human, player computer)
+{
+	Card humansCard = human.playNextCard();
+	Card computersCard = computer.playNextCard();
+		if (playerWins(humansCard, computersCard))
+		{
+			cout << "Player's ";
+			printCard(humansCard);
+			cout << "Beats the Computer's ";
+			printCard(computersCard);
+			human.addToDiscard(humansCard);
+			human.addToDiscard(computersCard);
+		}
+		else if(playerWins(computersCard, humansCard))
+		{
+			cout << "Computer's ";
+			printCard(computersCard);
+			cout << "Beats the Player's ";
+			printCard(humansCard);
+			computer.addToDiscard(humansCard);
+			computer.addToDiscard(computersCard);
+		}
+}
+
 void gameManager::deal(deck d , player& human, player& computer)
 {
 	//sets the size , using the player function
@@ -135,4 +159,5 @@ void gameManager::deal(deck d , player& human, player& computer)
 	{
 		computer.setHandCard(i,d.getCard[i]);
 	}
+
 }
