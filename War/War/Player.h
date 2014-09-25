@@ -33,7 +33,7 @@ public:
 	void shuffleHand ();
 	void discard_to_hand();
 
-	void initial_hand_size(); //sets the size of the hand initially to 26
+
 private:
 	int handSize;
 	int discardSize;

@@ -146,9 +146,6 @@ void gameManager::round(player human, player computer)
 
 void gameManager::deal(deck d , player human, player computer)
 {
-	//sets the size , using the player function
-	human.initial_hand_size();
-	computer.initial_hand_size();
 
 	for (int i = 0; i < 26; i++)
 	{
