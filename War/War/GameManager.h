@@ -2,7 +2,7 @@
 #define GAMEMANAGER_
 
 #include "Card.h"
-#include "Deck and Shuffler.cpp"
+#include "Deck.h"
 #include "Player.h"
 
 class gameManager
@@ -16,7 +16,7 @@ public:
 	void war(player human, player computer, Card humanCard, Card computerCard);
 	bool gameOver (player human, player computer);
 	// Returns true if one player is completely out of cards.
-	void deal (deck d, player human, player computer);
+    void  deal(deck d , player& human, player& computer);
 	// distributes the cards between the players.
 	void printCard(Card c); // cout the value and suit of a card
 };

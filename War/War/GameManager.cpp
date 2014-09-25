@@ -119,6 +119,7 @@ void gameManager::printCard(Card c)
 	cout << c.getValue() << " of " << c.getSuit() << endl;
 }
 
+
 void gameManager::round(player human, player computer)
 {
 	Card humansCard = human.playNextCard();
@@ -143,16 +144,19 @@ void gameManager::round(player human, player computer)
 		}
 }
 
-void gameManager::deal(deck d, player human, player computer)
+void gameManager::deal(deck d , player& human, player& computer)
 {
+	human.initial_hand_size();
+	computer.initial_hand_size();
+	//need a call to create the deck
+	d.create_deck(); //when added, oranges doesn't appear
 	for (int i = 0; i < 26; i++)
 	{
-		human.setHandCard(i,d.getCard[i]);
+		human.setHandCard(i,d.getCard(i)); 
 		
 	}
 	for (int i = 26; i<52; i++)
 	{
-		computer.setHandCard(i,d.getCard[i]);
+		computer.setHandCard(i,d.getCard(i));
 	}
-
 }
