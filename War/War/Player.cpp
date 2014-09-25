@@ -2,7 +2,9 @@
 #include "Card.h"
 #include <vector>
 #include <ctime>
+#include <iostream>
 using std::vector;
+using std::cout;
 
 //constructor
 player::player(int handTotal)
@@ -66,6 +68,7 @@ Card player::playNextCard()
 	hand.resize(hand.size()-1);
 	handSize--;
 	cardTotal--;
+	cout << holder.name() << " ";
 	return holder;
 }
 

@@ -108,7 +108,11 @@ void gameManager::war(player human, player computer, Card humanCard, Card comput
 
 bool gameManager::gameOver(player human, player computer)
 {
-	if(human.getCardTotal() == 0 || computer.getCardTotal() == 0)
+	if(human.getCardTotal() == 0)
+	{
+		return true;
+	}
+	if (computer.getCardTotal() == 0)
 	{
 		return true;
 	}
@@ -121,11 +125,11 @@ void gameManager::printCard(Card c) //there is a function string name that does 
 	//cout << c.getValue() << " of " << c.getSuit() << endl;
 }
 
-void gameManager::round(player human, player computer)
+void gameManager::round(player human, player computer, Card humansCard, Card computersCard)
 {
 	char continueChar = 'a';
-	Card humansCard = human.playNextCard();
-	Card computersCard = computer.playNextCard();
+	//Card humansCard = human.playNextCard();
+	//Card computersCard = computer.playNextCard();
 	if (playerWins(humansCard, computersCard) && !isWar(humansCard,computersCard))
 	{
 		cout << "Player's ";
@@ -163,11 +167,14 @@ void gameManager::deal(deck &d , player& human, player& computer)
 	for (int i = 0; i < 26; i++)
 	{
 		human.setHandCard(i,d.getCard(i)); 
-	//	computer.setHandCard(i,d.getCard(i+1));
-		
 	}
 	for (int i = 26; i<52; i++)
 	{
 		computer.setHandCard(i-26,d.getCard(i));
 	}
+	human.setHandSize(26);
+	human.setCardTotal(26);
+	computer.setHandSize(26);
+	computer.setCardTotal(26);
+
 }
