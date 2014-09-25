@@ -1,4 +1,39 @@
+<<<<<<< HEAD
 ﻿Build started 9/25/2014 3:26:08 PM.
+=======
+<<<<<<< HEAD
+﻿Build started 9/25/2014 3:05:58 PM.
+     1>Project "C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GameManager.cpp
+         GameManager.cpp
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(81): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(97): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(120): error C2563: mismatch in formal parameter list
+     1>c:\users\johnsonra1\documents\github\https---github.com-gccjackofalltrades-card-war\war\war\gamemanager.cpp(120): error C2568: '<<' : unable to resolve function overload
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(993): could be 'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(1019): or       'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(1027): or       'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+                 with
+                 [
+                     _Elem=wchar_t,
+                     _Traits=std::char_traits<wchar_t>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\ostream(1037): or       'std::basic_ostream<_Elem,_Traits> &std::endl(std::basic_ostream<_Elem,_Traits> &)'
+                 with
+                 [
+                     _Elem=unsigned short,
+                     _Traits=std::char_traits<unsigned short>
+                 ]
+     1>Done Building Project "C:\Users\johnsonra1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" (Build target(s)) -- FAILED.
+=======
+﻿Build started 9/25/2014 2:49:29 PM.
+>>>>>>> 7baac97f2bf7d8396e290566a0cba9802a2a4ebe
      1>Project "C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\War\War.vcxproj" on node 2 (Build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\War.unsuccessfulbuild".
@@ -18,7 +53,16 @@
          Deleting file "Debug\War.unsuccessfulbuild".
          Touching "Debug\War.lastbuildstate".
      1>Done Building Project "C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War.git\War\War\War.vcxproj" (Build target(s)).
+>>>>>>> origin/Nate
 
-Build succeeded.
+Build FAILED.
 
+<<<<<<< HEAD
 Time Elapsed 00:00:01.10
+=======
+<<<<<<< HEAD
+Time Elapsed 00:00:01.01
+=======
+Time Elapsed 00:00:03.46
+>>>>>>> origin/Nate
+>>>>>>> 7baac97f2bf7d8396e290566a0cba9802a2a4ebe

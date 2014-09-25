@@ -31,6 +31,7 @@ void deck::create_deck()
 {
 	deck_of_cards.resize(52); //setting the size of the deck
 	deck setter;
+
 	Value value;
 	int k=0;
 

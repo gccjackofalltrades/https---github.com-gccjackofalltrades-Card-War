@@ -115,12 +115,6 @@ bool gameManager::gameOver(player human, player computer)
 	return false;
 }
 
-//void gameManager::printCard(Card c)
-//{
-//	cout << c.getValue() << " of " << c.getSuit() << endl;
-//}
-
-
 void gameManager::round(player human, player computer)
 {
 	char continueChar = 'a';
