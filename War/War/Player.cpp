@@ -4,6 +4,12 @@
 #include <ctime>
 using std::vector;
 
+//constructor
+player::player(int handTotal)
+{
+	handSize=handTotal;
+}
+
 Card player::getHandCard (int location)
 {
 	return hand[location];
@@ -121,3 +127,7 @@ void player::shuffleHand ()
 
 }
 
+void player::initial_hand_size()
+{
+	hand.resize(52);
+}
