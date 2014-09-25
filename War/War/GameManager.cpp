@@ -126,7 +126,7 @@ void gameManager::round(player human, player computer)
 	char continueChar = 'a';
 	Card humansCard = human.playNextCard();
 	Card computersCard = computer.playNextCard();
-	if (playerWins(humansCard, computersCard) && !isWar())
+	if (playerWins(humansCard, computersCard) && !isWar(humansCard,computersCard))
 	{
 		cout << "Player's ";
 		cout << humansCard.name();
