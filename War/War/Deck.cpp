@@ -84,6 +84,6 @@ void deck::shuffle_deck(vector<Card>& decks)
 	}
 
 
-	cout<<"laughing cow cheese"<<endl;
+
 }
 

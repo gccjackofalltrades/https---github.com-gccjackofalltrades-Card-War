@@ -13,6 +13,7 @@ using std::endl;
 int main()
 {
 	deck theDeck;
+	theDeck.create_deck();
 	player p1(26);
 	player computer(26);
 	gameManager overLord;

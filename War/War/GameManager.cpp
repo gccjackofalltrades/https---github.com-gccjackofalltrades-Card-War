@@ -150,7 +150,6 @@ void gameManager::deal(deck d , player& human, player& computer)
 	human.initial_hand_size();
 	computer.initial_hand_size();
 	//need a call to create the deck
-	d.create_deck(); //when added, oranges doesn't appear
 	for (int i = 0; i < 26; i++)
 	{
 		human.setHandCard(i,d.getCard(i)); 
