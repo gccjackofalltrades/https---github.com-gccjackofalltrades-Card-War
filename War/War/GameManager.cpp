@@ -168,6 +168,6 @@ void gameManager::deal(deck &d , player& human, player& computer)
 	}
 	for (int i = 26; i<52; i++)
 	{
-		computer.setHandCard(i,d.getCard(i));
+		computer.setHandCard(i-26,d.getCard(i));
 	}
 }

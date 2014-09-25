@@ -53,14 +53,14 @@ void deck::shuffle_deck(vector<Card>& decks)
 	Card temp; //storage for object
 
 	srand(time(0));
-<<<<<<< HEAD
+
 	int random_1=rand()%decks.size();//sets up a random number based on the decks size
 	int random_2=rand()%decks.size();
 	for(int i=0;i<200;i++)
-=======
+
 	int random_number=rand()%decks.size()+1;//sets up a random number based on the decks size
 	for(int i=0;i<decks.size();i++)
->>>>>>> origin/Nate
+
 	{
  
 			temp=decks[random_1]; 
