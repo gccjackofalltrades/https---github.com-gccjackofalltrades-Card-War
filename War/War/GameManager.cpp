@@ -119,7 +119,6 @@ void gameManager::printCard(Card c)
 	cout << c.getValue() << " of " << c.getSuit() << endl;
 }
 
-<<<<<<< HEAD
 void gameManager::round(player human, player computer)
 {
 	Card humansCard = human.playNextCard();
@@ -142,7 +141,8 @@ void gameManager::round(player human, player computer)
 			computer.addToDiscard(humansCard);
 			computer.addToDiscard(computersCard);
 		}
-=======
+}
+
 void gameManager::deal(deck d, player human, player computer)
 {
 	for (int i = 0; i < 26; i++)
@@ -154,5 +154,5 @@ void gameManager::deal(deck d, player human, player computer)
 	{
 		computer.setHandCard(i,d.getCard[i]);
 	}
->>>>>>> 79bdcfdc115a9357644e0ad967253d1e717c23f5
+
 }

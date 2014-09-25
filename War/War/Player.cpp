@@ -56,7 +56,7 @@ void player::setCardTotal(int total)
 
 Card player::playNextCard()
 {
-	Card holder = getHandCard(hand.size - 1);
+	Card holder = getHandCard(hand.size() - 1);
 	hand.resize(hand.size()-1);
 	handSize--;
 	cardTotal--;
