@@ -42,7 +42,7 @@ void gameManager::war(player human, player computer, Card humanCard, Card comput
 		return;
 	}
 	cout<<"\n"<<endl;
-	cout<<"Player's Cards"<<endl;
+	cout<<"Computer's Cards"<<endl;
 	for (int i = 1; i < shortNum; i++)
 	{
 		if (gameOver(human, computer)) // breaks out of loop if computer is out of cards
@@ -62,7 +62,7 @@ void gameManager::war(player human, player computer, Card humanCard, Card comput
 		return;
 	}
 	cout<<endl;
-	cout<<"Computer's Cards"<<endl;
+	cout<<"Human's Cards"<<endl;
 	for (int i = 1; i < shortNum; i++)
 	{
 		if(gameOver(human, computer)) // breaks out of the loop if the human is out of cards
@@ -180,7 +180,6 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		human.setCardTotal(0);
 		cout<<"Player forfeits, Computer Wins"<<endl;
 		exit(0);
-		cout<<"apples"<<endl;
 	}
 }
 
