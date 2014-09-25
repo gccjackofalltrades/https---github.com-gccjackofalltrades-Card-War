@@ -49,38 +49,22 @@ void deck::create_deck()
 
 void deck::shuffle_deck(vector<Card>& decks)
 {
-	int store; //temporary storage for indices
 
 	Card temp; //storage for object
 
 	srand(time(0));
-	int random_number=rand()%decks.size()+1;//sets up a random number based on the decks size
-	cout<<"cookies"<<endl;
-	for(int i=0;i<decks.size();i++)
+	int random_1=rand()%decks.size();//sets up a random number based on the decks size
+	int random_2=rand()%decks.size();
+	for(int i=0;i<200;i++)
 	{
-		if((i+1)==decks.size())
-		{
-			store=decks.size();
-			store=decks.size()-1;
-			temp=decks[store];
-			decks[store]=decks[0];
-			decks[0]=temp;
-		}
-		else
-		{
-			store=(decks.size()-(i+1)); //last element, first time through it would be number 51
-			temp=decks[store];
-			decks[store]=decks[i+1];
-			decks[i+1]=temp;
-		}
-		//the actual random element in the shuffle
-		for(int j=0;j<(decks.size()-random_number);j++)
-		{
-			store=decks.size()-(j+1); 
-			temp=decks[store]; 
-			decks[store]=decks[(j+1)]; 
-			decks[(j+1)]=temp;
-		}
+ 
+			temp=decks[random_1]; 
+			decks[random_1]=decks[random_2]; 
+			decks[random_2]=temp;
+
+			//create new random numbers
+			random_1=rand()%decks.size();
+	        random_2=rand()%decks.size();
 	}
 
 

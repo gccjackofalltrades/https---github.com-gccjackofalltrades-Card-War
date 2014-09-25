@@ -116,8 +116,8 @@ bool gameManager::gameOver(player human, player computer)
 
 void gameManager::printCard(Card c) //there is a function string name that does this 
 {
-	c.name(); //this is that function
-	cout << c.getValue() << " of " << c.getSuit() << endl;
+	cout << c.name() << endl; //this is that function
+	//cout << c.getValue() << " of " << c.getSuit() << endl;
 }
 
 
@@ -145,7 +145,7 @@ void gameManager::round(player human, player computer)
 		}
 }
 
-void gameManager::deal(deck d , player& human, player& computer)
+void gameManager::deal(deck &d , player& human, player& computer)
 {
 	human.initial_hand_size();
 	computer.initial_hand_size();
