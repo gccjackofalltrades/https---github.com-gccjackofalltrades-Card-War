@@ -32,7 +32,7 @@ int main()
 		}
 		else
 		{
-			overLord.round();
+			overLord.round(p1, computer);
 		}
 		Card playersNextCard = p1.playNextCard();
 		Card computersNextCard = computer.playNextCard();
