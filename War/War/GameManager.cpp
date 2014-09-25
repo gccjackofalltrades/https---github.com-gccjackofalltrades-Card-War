@@ -152,6 +152,7 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		//add to shuffle if computers card is out
 		if(computer.getHandSize()==0)
 		{
+			cout<<"Commencing shuffling of computer hand"<<endl;
 			computer.shuffleHand();
 		}
 	}
@@ -167,6 +168,7 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		if(human.getHandSize()==0)
 		{
 			//add to shuffle if players card is out
+			cout<<"Now shuffling human hand"<<endl;
 			human.shuffleHand();
 		}
 	}
