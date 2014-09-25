@@ -12,6 +12,8 @@ using std::endl;
 
 int main()
 {
+	/*deck test;
+	test.create_deck();*/
 	deck theDeck;
 	theDeck.create_deck();
 	player p1(26);
@@ -23,6 +25,7 @@ int main()
 	while(!overLord.gameOver(p1, computer))
 	{
 		//it runs through this area
+
 		if(overLord.isWar(playersNextCard, computersNextCard))
 		{
 			overLord.war(p1, computer, playersNextCard, computersNextCard);

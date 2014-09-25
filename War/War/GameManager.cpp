@@ -8,6 +8,7 @@
 using std::vector;
 using std::cout;
 using std::endl;
+using std::cin;
 
 bool gameManager::playerWins(Card player, Card computer)
 {
@@ -74,13 +75,13 @@ void gameManager::war(player human, player computer, Card humanCard, Card comput
 	{
 		cout << "Human wins the War!" << endl
 			<< "Human's ";
-		printCard(human_cards[human_cards.size()-1]);
+		cout << human_cards[human_cards.size()-1].name() << endl;
 		cout << " beats computer's ";
-		printCard(computer_cards[computer_cards.size()-1]);
+		cout << computer_cards[computer_cards.size()-1].name() << endl;
 		cout << endl << "Human gains: ";
 		for (int i = 0; i < computer_cards.size(); i++)
 		{
-			printCard(computer_cards[i]);
+			cout << computer_cards[i].name();
 			cout << " ";
 			human.addToDiscard(computer_cards [i]);
 			human.addToDiscard(human_cards[i]);
@@ -90,13 +91,13 @@ void gameManager::war(player human, player computer, Card humanCard, Card comput
 	{
 		cout << "Computer wins the War!" << endl
 			<< "computer's ";
-		printCard(computer_cards[computer_cards.size()-1]);
+		cout << computer_cards[computer_cards.size()-1].name() << endl;
 		cout << " beats human's ";
-		printCard(human_cards[human_cards.size()-1]);
+		cout << human_cards[human_cards.size()-1].name() << endl;
 		cout << endl << "Computer gains: ";
 		for (int i = 0; i < human_cards.size(); i++)
 		{
-			printCard(human_cards[i]);
+			cout << human_cards[i].name();
 			cout << " ";
 			computer.addToDiscard(computer_cards[i]);
 			computer.addToDiscard(human_cards[i]);
@@ -114,6 +115,7 @@ bool gameManager::gameOver(player human, player computer)
 	return false;
 }
 
+<<<<<<< HEAD
 void gameManager::printCard(Card c) //there is a function string name that does this 
 {
 	cout << c.name() << endl; //this is that function
@@ -121,28 +123,40 @@ void gameManager::printCard(Card c) //there is a function string name that does 
 }
 
 
+=======
+>>>>>>> origin/Nate
 void gameManager::round(player human, player computer)
 {
+	char continueChar = 'a';
 	Card humansCard = human.playNextCard();
 	Card computersCard = computer.playNextCard();
-		if (playerWins(humansCard, computersCard))
-		{
-			cout << "Player's ";
-			printCard(humansCard);
-			cout << "Beats the Computer's ";
-			printCard(computersCard);
-			human.addToDiscard(humansCard);
-			human.addToDiscard(computersCard);
-		}
-		else if(playerWins(computersCard, humansCard))
-		{
-			cout << "Computer's ";
-			printCard(computersCard);
-			cout << "Beats the Player's ";
-			printCard(humansCard);
-			computer.addToDiscard(humansCard);
-			computer.addToDiscard(computersCard);
-		}
+	if (playerWins(humansCard, computersCard) && !isWar())
+	{
+		cout << "Player's ";
+		cout << humansCard.name();
+		cout << " Beats the Computer's ";
+		cout << computersCard.name();
+		cout << endl;
+		human.addToDiscard(humansCard);
+		human.addToDiscard(computersCard);
+	}
+	else if(!playerWins(humansCard, computersCard))
+	{
+		cout << "Computer's ";
+		cout << computersCard.name();
+		cout << " Beats the Player's ";
+		cout << humansCard.name();
+		cout << endl;
+		computer.addToDiscard(humansCard);
+		computer.addToDiscard(computersCard);
+	}
+	cout << "Enter Q to quit, any other character to play next round" << endl;
+	cin >> continueChar;
+	continueChar = toupper(continueChar);
+	if (continueChar == 'Q')
+	{
+		human.setCardTotal(0);
+	}
 }
 
 void gameManager::deal(deck &d , player& human, player& computer)
@@ -153,6 +167,7 @@ void gameManager::deal(deck &d , player& human, player& computer)
 	for (int i = 0; i < 26; i++)
 	{
 		human.setHandCard(i,d.getCard(i)); 
+	//	computer.setHandCard(i,d.getCard(i+1));
 		
 	}
 	for (int i = 26; i<52; i++)
