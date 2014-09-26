@@ -50,13 +50,24 @@ void gameManager::war(player& human, player& computer, Card humanCard, Card comp
 			shortNum = i;
 			break;
 		}
-		if (computer.getHandSize() == 0) // shuffles computer's discard if hand runs out
+		if ((computer.getHandSize() == 0) && (!gameOver(human,computer))) // shuffles computer's discard if hand runs out
 		{
 			computer.shuffleHand();
 		}
 		computer_cards.push_back(computer.playNextCard()); // adds cards to computer's cards in play in the war
 		cout<<endl;
 	}
+	if(human.getHandSize()==0 && human.getCardTotal() != 0)
+	{
+		//add to shuffle if players card is out
+		cout<<"Now shuffling human hand"<<endl;
+		human.shuffleHand();
+	}
+	if(computer.getHandSize()==0 && computer.getCardTotal() != 0)
+	{
+		//add to shuffle if players card is out
+		cout<<"Now shuffling computer's hand"<<endl;
+		computer.shuffleHand();		}
 	if (shortNum == 1) // if the computer only has one card, it forfeits at this point
 	{
 		return;
@@ -69,14 +80,25 @@ void gameManager::war(player& human, player& computer, Card humanCard, Card comp
 		{
 			break;
 		}
-		if (human.getHandSize() == 0) // shuffles the human's discard if their hand runs out
+		if ((human.getHandSize() == 0) && (!gameOver(human,computer))) // shuffles the human's discard if their hand runs out
 		{
 			human.shuffleHand();
 		}
 		human_cards.push_back(human.playNextCard()); // adds cards to the human's cards in play in the war
 		cout<<endl;
 	}
-	
+		if(human.getHandSize()==0 && human.getCardTotal() != 0)
+		{
+			//add to shuffle if players card is out
+			cout<<"Now shuffling human hand"<<endl;
+			human.shuffleHand();
+		}
+		if(computer.getHandSize()==0 && computer.getCardTotal() != 0)
+		{
+			//add to shuffle if players card is out
+			cout<<"Now shuffling computer's hand"<<endl;
+			computer.shuffleHand();
+		}
 	if (playerWins(human_cards[human_cards.size()-1], computer_cards[computer_cards.size()-1]))
 	// copies computer's cards into human's discard if human wins war
 	{
@@ -94,6 +116,7 @@ void gameManager::war(player& human, player& computer, Card humanCard, Card comp
 			human.addToDiscard(computer_cards [i]);
 			human.addToDiscard(human_cards[i]);
 			cout<<endl;
+
 		}
 	}
 	else // copies human's cards into computer's discard if computer wins war
@@ -112,14 +135,15 @@ void gameManager::war(player& human, player& computer, Card humanCard, Card comp
 			computer.addToDiscard(human_cards[i]);
 			cout<<endl;
 		}
-		cout<<human.getHandSize()<<" is the hand size of player"<<endl;
-		cout<<human.getDiscardSize()<<" is the player discard size"<<endl;
-		cout<<human.getCardTotal()<<" is player card total"<<endl;
-		cout<<computer.getHandSize()<<" is the hand size of the computer"<<endl;
-		cout<<computer.getDiscardSize()<<" is the computer discard size"<<endl;
-		cout<<computer.getCardTotal()<<" is computer card total"<<endl;
+
 
 	}
+	cout<<human.getHandSize()<<" is the hand size of player"<<endl;
+	cout<<human.getDiscardSize()<<" is the player discard size"<<endl;
+	cout<<human.getCardTotal()<<" is player card total"<<endl;
+	cout<<computer.getHandSize()<<" is the hand size of the computer"<<endl;
+	cout<<computer.getDiscardSize()<<" is the computer discard size"<<endl;
+	cout<<computer.getCardTotal()<<" is computer card total"<<endl;
 	return;
 }
 
@@ -188,14 +212,14 @@ void gameManager::round(player& human, player& computer, Card humansCard, Card c
 		cout<<computer.getCardTotal()<<" is computer card total"<<endl;
 	}
 		//add to shuffle if human card out
-		if(human.getHandSize()==0)
+	if((human.getHandSize()==0) && (!gameOver(human,computer)))
 		{
 			//add to shuffle if players card is out
 			cout<<"Now shuffling human hand"<<endl;
 			human.shuffleHand();
 		}
 		//add to shuffle if computers card is out
-		if(computer.getHandSize()==0)
+		if((computer.getHandSize()==0) && (!gameOver(human, computer)))
 		{
 			cout<<"Commencing shuffling of computer hand"<<endl;
 			computer.shuffleHand();
