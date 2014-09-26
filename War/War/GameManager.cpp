@@ -112,6 +112,8 @@ void gameManager::war(player human, player computer, Card humanCard, Card comput
 			computer.addToDiscard(human_cards[i]);
 			cout<<endl;
 		}
+		cout<<human.getHandSize()<<" is the hand size of player"<<endl;
+		cout<<computer.getHandSize()<<" is the hand size of the computer"<<endl;
 	}
 	return;
 }
@@ -151,6 +153,8 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		cout << endl;
 		human.addToDiscard(humansCard);
 		human.addToDiscard(computersCard);
+		cout<<human.getHandSize()<<" is the hand size of player"<<endl;
+		cout<<computer.getHandSize()<<" is the hand size of the computer"<<endl;
 		//add to shuffle if computers card is out
 		if(computer.getHandSize()==0)
 		{
@@ -167,6 +171,8 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		cout << endl;
 		computer.addToDiscard(humansCard);
 		computer.addToDiscard(computersCard);
+		cout<<human.getHandSize()<<" is the hand size of player"<<endl;
+		cout<<computer.getHandSize()<<" is the hand size of the computer"<<endl;
 		if(human.getHandSize()==0)
 		{
 			//add to shuffle if players card is out
