@@ -141,6 +141,18 @@ void gameManager::war(player& human, player& computer, Card humanCard, Card comp
 
 
 	}
+	if((human.getHandSize()==0) && (!gameOver(human,computer)))
+	{
+		//add to shuffle if players card is out
+		cout<<"Now shuffling human hand"<<endl;
+		human.shuffleHand();
+	}
+	//add to shuffle if computers card is out
+	if((computer.getHandSize()==0) && (!gameOver(human, computer)))
+	{
+		cout<<"Commencing shuffling of computer hand"<<endl;
+		computer.shuffleHand();
+	}
 	cout<<human.getHandSize()<<" is the hand size of player"<<endl;
 	cout<<human.getDiscardSize()<<" is the player discard size"<<endl;
 	cout<<human.getCardTotal()<<" is player card total"<<endl;
