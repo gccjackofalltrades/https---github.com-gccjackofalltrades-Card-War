@@ -90,11 +90,11 @@ void player::addToHand (Card c)
 
 void player::shuffleHand ()
 {
-	int store; //temporary storage for indices
+	//int store; //temporary storage for indices
 
 	Card temp; //storage for object
 
-	cin>>store;
+	//cin>>store;
 	for (int i = 0; i < discardSize; i++)
 	{
 		addToHand(discard[i]);
@@ -120,7 +120,7 @@ void player::shuffleHand ()
 			random_1=rand()%hand.size();
 	        random_2=rand()%hand.size();
 	}
-
+	cardTotal = hand.size();
 }
 
 void player::initial_hand_size()
