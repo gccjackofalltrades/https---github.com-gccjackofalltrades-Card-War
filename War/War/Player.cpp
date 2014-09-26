@@ -93,18 +93,14 @@ void player::shuffleHand ()
 	int store; //temporary storage for indices
 
 	Card temp; //storage for object
-	cout<<"banana"<<endl;
-	//hand.resize(discardSize);
-	cout<<"the hand size "<<hand.size()<<endl;
-	cout<<"discard size is "<<discardSize<<endl;
-	cout<<"discard size is "<<discard.size()<<endl;
-	cout<<"capacity"<<discard.capacity()<<endl;
-	cout<<"enter number"<<endl;
+
 	cin>>store;
 	for (int i = 0; i < discardSize; i++)
 	{
 		addToHand(discard[i]);
 	}
+	initialize_discard_vector(); //sets discard size to 0
+
 
 	srand(time(0));
 	int random_1=rand()%hand.size();//sets up a random number based on the decks size
