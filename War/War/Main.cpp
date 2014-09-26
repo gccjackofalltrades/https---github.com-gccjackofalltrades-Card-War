@@ -22,6 +22,14 @@ int main()
 
 	while(!overLord.gameOver(p1, computer))
 	{
+		if (p1.getHandSize() == 0)
+		{
+			p1.shuffleHand();
+		}
+		if (computer.getHandSize() == 0)
+		{
+			computer.shuffleHand();
+		}
 		cout << "Player plays ";
 		Card playersNextCard = p1.playNextCard();
 
