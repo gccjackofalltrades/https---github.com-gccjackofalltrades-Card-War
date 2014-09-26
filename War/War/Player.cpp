@@ -97,11 +97,13 @@ void player::shuffleHand ()
 	//hand.resize(discardSize);
 	cout<<"the hand size "<<hand.size()<<endl;
 	cout<<"discard size is "<<discardSize<<endl;
+	cout<<"discard size is "<<discard.size()<<endl;
+	cout<<"capacity"<<discard.capacity()<<endl;
 	cout<<"enter number"<<endl;
 	cin>>store;
 	for (int i = 0; i < discardSize; i++)
 	{
-		hand.push_back(discard[i]);
+		addToHand(discard[i]);
 		//cout<<"apple"<<endl;
 		//hand[i] = discard[i];
 	}
@@ -134,6 +136,6 @@ void player::initial_hand_size()
 void player::initialize_discard_vector()
 {
 	//initialize both of these
-	discard.resize(1);
+	//discard.resize(52);
 	discardSize=0;
 }
