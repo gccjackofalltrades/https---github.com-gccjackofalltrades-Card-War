@@ -57,17 +57,19 @@ void gameManager::war(player& human, player& computer, Card humanCard, Card comp
 		computer_cards.push_back(computer.playNextCard()); // adds cards to computer's cards in play in the war
 		cout<<endl;
 	}
-	if(human.getHandSize()==0 && human.getCardTotal() != 0)
-	{
-		//add to shuffle if players card is out
-		cout<<"Now shuffling human hand"<<endl;
-		human.shuffleHand();
-	}
-	if(computer.getHandSize()==0 && computer.getCardTotal() != 0)
-	{
-		//add to shuffle if players card is out
-		cout<<"Now shuffling computer's hand"<<endl;
-		computer.shuffleHand();		}
+	if((human.getHandSize()==0) && (!gameOver(human,computer)))
+		{
+			//add to shuffle if players card is out
+			cout<<"Now shuffling human hand"<<endl;
+			human.shuffleHand();
+		}
+		//add to shuffle if computers card is out
+		if((computer.getHandSize()==0) && (!gameOver(human, computer)))
+		{
+			cout<<"Commencing shuffling of computer hand"<<endl;
+			computer.shuffleHand();
+		}
+
 	if (shortNum == 1) // if the computer only has one card, it forfeits at this point
 	{
 		return;
@@ -87,18 +89,19 @@ void gameManager::war(player& human, player& computer, Card humanCard, Card comp
 		human_cards.push_back(human.playNextCard()); // adds cards to the human's cards in play in the war
 		cout<<endl;
 	}
-		if(human.getHandSize()==0 && human.getCardTotal() != 0)
+	if((human.getHandSize()==0) && (!gameOver(human,computer)))
 		{
 			//add to shuffle if players card is out
 			cout<<"Now shuffling human hand"<<endl;
 			human.shuffleHand();
 		}
-		if(computer.getHandSize()==0 && computer.getCardTotal() != 0)
+		//add to shuffle if computers card is out
+		if((computer.getHandSize()==0) && (!gameOver(human, computer)))
 		{
-			//add to shuffle if players card is out
-			cout<<"Now shuffling computer's hand"<<endl;
+			cout<<"Commencing shuffling of computer hand"<<endl;
 			computer.shuffleHand();
 		}
+
 	if (playerWins(human_cards[human_cards.size()-1], computer_cards[computer_cards.size()-1]))
 	// copies computer's cards into human's discard if human wins war
 	{
