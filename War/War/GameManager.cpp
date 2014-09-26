@@ -154,14 +154,6 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		//add to shuffle if computers card is out
 		if(computer.getHandSize()==0)
 		{
-			//safety check for discard pile
-			if(computer.getDiscardSize()==0)
-			{
-				char c;
-				cout<<"You win enter a letter to exit"<<endl;
-				cin>>c;
-				exit(0);
-			}
 			cout<<"Commencing shuffling of computer hand"<<endl;
 			computer.shuffleHand();
 		}
@@ -177,14 +169,6 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		computer.addToDiscard(computersCard);
 		if(human.getHandSize()==0)
 		{
-			//safety check for discard pile
-			if(human.getDiscardSize()==0)
-			{
-				char c;
-				cout<<"You lose enter a letter to exit"<<endl;
-				cin>>c;
-				exit(0);
-			}
 			//add to shuffle if players card is out
 			cout<<"Now shuffling human hand"<<endl;
 			human.shuffleHand();
@@ -210,6 +194,8 @@ void gameManager::deal(deck &d , player& human, player& computer)
 {
 	human.initial_hand_size();
 	computer.initial_hand_size();
+	human.initialize_discard_vector();
+	computer.initialize_discard_vector();
 	//need a call to create the deck
 	for (int i = 0; i < 26; i++)
 	{

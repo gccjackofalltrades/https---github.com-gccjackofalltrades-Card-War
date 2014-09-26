@@ -34,6 +34,7 @@ public:
 	void discard_to_hand();
 
 	void initial_hand_size(); //sets the vector size of the hand initially to 26, idk if needed, all commented
+	void initialize_discard_vector();
 
 private:
 	int handSize;

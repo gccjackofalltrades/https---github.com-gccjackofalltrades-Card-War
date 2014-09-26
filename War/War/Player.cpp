@@ -6,6 +6,7 @@
 using std::vector;
 using std::cout;
 using std::endl;
+using std::cin;
 
 //constructor
 player::player(int handTotal)
@@ -93,11 +94,16 @@ void player::shuffleHand ()
 
 	Card temp; //storage for object
 	cout<<"banana"<<endl;
-	hand.resize(discardSize);
-	for (int i = 0; i < hand.size(); i++)
+	//hand.resize(discardSize);
+	cout<<"the hand size "<<hand.size()<<endl;
+	cout<<"discard size is "<<discardSize<<endl;
+	cout<<"enter number"<<endl;
+	cin>>store;
+	for (int i = 0; i < discardSize; i++)
 	{
-		cout<<"apple"<<endl;
-		hand[i] = discard[i];
+		hand.push_back(discard[i]);
+		//cout<<"apple"<<endl;
+		//hand[i] = discard[i];
 	}
 
 	srand(time(0));
@@ -124,4 +130,10 @@ void player::shuffleHand ()
 void player::initial_hand_size()
 {
 	hand.resize(26);
+}
+void player::initialize_discard_vector()
+{
+	//initialize both of these
+	discard.resize(1);
+	discardSize=0;
 }
