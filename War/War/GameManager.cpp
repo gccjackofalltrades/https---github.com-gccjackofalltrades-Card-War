@@ -24,7 +24,7 @@ bool gameManager::isWar(Card player, Card computer)
 	return player.getValue()==computer.getValue();
 }
 
-void gameManager::war(player human, player computer, Card humanCard, Card computerCard)
+void gameManager::war(player& human, player& computer, Card humanCard, Card computerCard)
 {
 	int shortNum = 5;
 	vector <Card> human_cards;
@@ -144,7 +144,7 @@ void gameManager::printCard(Card c) //there is a function string name that does 
 	//cout << c.getValue() << " of " << c.getSuit() << endl;
 }
 
-void gameManager::round(player human, player computer, Card humansCard, Card computersCard)
+void gameManager::round(player& human, player& computer, Card humansCard, Card computersCard)
 {
 	char continueChar = 'a';
 	//Card humansCard = human.playNextCard();
@@ -156,6 +156,7 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		cout << " Beats the Computer's ";
 		cout << computersCard.name();
 		cout << endl;
+		//adds to discard pile of human
 		human.addToDiscard(humansCard);
 		human.addToDiscard(computersCard);
 
@@ -166,6 +167,7 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		cout<<computer.getDiscardSize()<<" is the computer discard size"<<endl;
 		cout<<computer.getCardTotal()<<" is computer card total"<<endl;
 	}
+
 	else if(!playerWins(humansCard, computersCard))
 	{
 		cout << "\tComputer's ";
@@ -173,6 +175,7 @@ void gameManager::round(player human, player computer, Card humansCard, Card com
 		cout << " Beats the Player's ";
 		cout << humansCard.name();
 		cout << endl;
+		//adds both cards to humans discard pile
 		computer.addToDiscard(humansCard);
 		computer.addToDiscard(computersCard);
 

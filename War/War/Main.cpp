@@ -24,6 +24,7 @@ int main()
 	{
 		cout << "Player plays ";
 		Card playersNextCard = p1.playNextCard();
+
 		cout <<" \t \t \t"<< "Computer plays ";
 		Card computersNextCard = computer.playNextCard();
 		cout << endl<<endl;
@@ -36,13 +37,14 @@ int main()
 		}
 		else
 		{
-			
 			overLord.round(p1, computer, playersNextCard, computersNextCard);
 		}
 		if (overLord.gameOver(p1, computer))
 		{
 			break;
 		}
+
+
 	}
 	return 0;
 }

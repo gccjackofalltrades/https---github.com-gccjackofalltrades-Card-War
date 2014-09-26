@@ -78,7 +78,7 @@ void player::addToDiscard (Card c)
 {
 	discard.push_back(c);
 	discardSize++;
-	cardTotal++;
+	cardTotal++;;
 }
 
 void player::addToHand (Card c)
@@ -104,8 +104,6 @@ void player::shuffleHand ()
 	for (int i = 0; i < discardSize; i++)
 	{
 		addToHand(discard[i]);
-		//cout<<"apple"<<endl;
-		//hand[i] = discard[i];
 	}
 
 	srand(time(0));
