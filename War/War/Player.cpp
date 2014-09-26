@@ -137,7 +137,7 @@ void player::initialize_discard_vector()
 {
 	//initialize both of these
 	//discard.resize(52);
-	discardSize=0;
+	//discardSize=0;
 	//cardTotal=0;
 //handSize=0;
 
