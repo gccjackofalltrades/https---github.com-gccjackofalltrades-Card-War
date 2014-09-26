@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 ﻿Build started 9/25/2014 11:16:29 PM.
      1>Project "C:\Users\hayesnj1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" on node 2 (Build target(s)).
+=======
+﻿Build started 9/25/2014 11:23:56 PM.
+     1>Project "C:\Users\abrahamjh1\Documents\GitHub\https---github.com-gccjackofalltrades-Card-War\War\War\War.vcxproj" on node 2 (Build target(s)).
+>>>>>>> origin/Nate
      1>InitializeBuildStatus:
-         Touching "Debug\War.unsuccessfulbuild".
+         Creating "Debug\War.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
          Main.cpp
@@ -19,4 +24,8 @@
 
 Build succeeded.
 
+<<<<<<< HEAD
 Time Elapsed 00:00:00.81
+=======
+Time Elapsed 00:00:02.06
+>>>>>>> origin/Nate

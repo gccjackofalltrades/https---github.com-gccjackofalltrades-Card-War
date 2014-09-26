@@ -30,6 +30,7 @@ int main()
 		{
 			computer.shuffleHand();
 		}
+
 		cout << "Player plays ";
 		Card playersNextCard = p1.playNextCard();
 
